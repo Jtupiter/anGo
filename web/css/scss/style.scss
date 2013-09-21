@@ -70,7 +70,7 @@ $phone-height: 1136px/2;
   position: relative;
   left: 0;
   top: 64px;
-  height: $phone-height - 64;
+  height: $phone-height - 112;
   width: 100%;
   transition: left 0.2s;
   overflow: scroll;
@@ -202,3 +202,59 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6000000', e
     background-size: $phone-width auto;
   }
 }
+
+.optionbar{
+  position: absolute;
+  z-index: 5;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 48px;
+  background: #FFFFFF;
+  box-shadow: -1px 0px 12px rgba(0,0,0,0.2);
+  .time, .groupsize, .budget, .transportation{
+    width: 24px;
+    height: 24px;
+    margin: 12px 6px 12px 12px;
+    float: left;
+    cursor: pointer;
+  }
+  .time{
+    background: url("../img/time-icon.png") no-repeat left center;
+    -webkit-background-size: 24px 24px;
+    -moz-background-size: 24px 24px;
+    background-size: 24px 24px;
+  }
+  .groupsize{
+    background: url("../img/people-icon.png") no-repeat left center;
+    -webkit-background-size: 24px 24px;
+    -moz-background-size: 24px 24px;
+    background-size: 24px 24px;
+  }
+  .budget{
+    background: url("../img/money-icon.png") no-repeat left center;
+    -webkit-background-size: 24px 24px;
+    -moz-background-size: 24px 24px;
+    background-size: 24px 24px;
+  }
+  .transportation{
+    background: url("../img/person-icon.png") no-repeat left center;
+    -webkit-background-size: 24px 24px;
+    -moz-background-size: 24px 24px;
+    background-size: 24px 24px;
+  }
+  p{
+    float: left;
+    line-height: 48px;
+    width: 48px;
+
+  }
+}
+
+
+
+
+
+
+
+

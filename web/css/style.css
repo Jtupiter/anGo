@@ -106,7 +106,7 @@ body {
   position: relative;
   left: 0;
   top: 64px;
-  height: 504px;
+  height: 456px;
   width: 100%;
   transition: left 0.2s;
   overflow: scroll; }
@@ -215,3 +215,43 @@ body {
   background-image: url("../img/theatre-1.jpg");
   background-position: center 100%;
   background-size: 320px auto; }
+
+.optionbar {
+  position: absolute;
+  z-index: 5;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 48px;
+  background: #FFFFFF;
+  box-shadow: -1px 0px 12px rgba(0, 0, 0, 0.2); }
+  .optionbar .time, .optionbar .groupsize, .optionbar .budget, .optionbar .transportation {
+    width: 24px;
+    height: 24px;
+    margin: 12px 6px 12px 12px;
+    float: left;
+    cursor: pointer; }
+  .optionbar .time {
+    background: url("../img/time-icon.png") no-repeat left center;
+    -webkit-background-size: 24px 24px;
+    -moz-background-size: 24px 24px;
+    background-size: 24px 24px; }
+  .optionbar .groupsize {
+    background: url("../img/people-icon.png") no-repeat left center;
+    -webkit-background-size: 24px 24px;
+    -moz-background-size: 24px 24px;
+    background-size: 24px 24px; }
+  .optionbar .budget {
+    background: url("../img/money-icon.png") no-repeat left center;
+    -webkit-background-size: 24px 24px;
+    -moz-background-size: 24px 24px;
+    background-size: 24px 24px; }
+  .optionbar .transportation {
+    background: url("../img/person-icon.png") no-repeat left center;
+    -webkit-background-size: 24px 24px;
+    -moz-background-size: 24px 24px;
+    background-size: 24px 24px; }
+  .optionbar p {
+    float: left;
+    line-height: 48px;
+    width: 48px; }
