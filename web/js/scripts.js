@@ -12,3 +12,9 @@ $(document).ready(function(){
       });
     });
 });
+
+$(document).ready(function(){
+  $(".optionbar div.icon").click(function(){
+    $(".select").show();
+  });
+}); 
