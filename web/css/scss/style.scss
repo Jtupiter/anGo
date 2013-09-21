@@ -50,6 +50,7 @@ $phone-height: 1136px/2;
   text-align: center;
   line-height: 20px;
   font-weight: 400;
+  font-family: 'Helvetiva Neue', Helvetiva Neue, 'Helvetiva', Helvetiva, sans-serif;
 }
 
 .nav-bar {
@@ -60,8 +61,9 @@ $phone-height: 1136px/2;
   background-color: #F5F5F5;
   line-height: 44px;
   text-align: center;
-  font-size: 18px;
+  font-size: 24px;
   border-bottom: 1px solid #EFEFEF;
+  color: #FF2A00;
 }
 
 .tiles {
@@ -93,7 +95,7 @@ $phone-height: 1136px/2;
     }
     h2 {
       float: left;
-      color: #555;
+      color: #666;
       padding: 6px 12px;
       font-size: 14px;
     }
@@ -121,16 +123,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6000000', e
       width: 100%;
     }
 
+    .category {
+      width: 6px;
+      height: 100%;
+      float: left;
+    }
+
     .time {
-      padding: 12px 6px;
+      padding: 14px 2px;
       width: 60px;
       float: left;
       text-align: center;
       font-weight: 400;
-      font-size: 20px;
+      font-size: 18px;
       border-right: 1px solid #EFEFEF;
       span {
-        font-size: 16px;
+        font-size: 14px;
+        color: #666;
       }
     }
   }
@@ -163,10 +172,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6000000', e
 
 .lunch {
   .category {
-    background-color: #7D8A2E;
-    width: 6px;
-    height: 100%;
-    float: left;
+    background-color: #FF6138;
   }
   .image {
     background-image: url("../img/food-1.jpg");
@@ -175,14 +181,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6000000', e
   }
 }
 
-.festival .image {
-  background-image: url("../img/fest-1.jpg");
-  background-position: center 100%;
-  background-size: $phone-width auto;
+.festival {
+  .category {
+    background-color: #FFFF9D;
+  }
+  .image {
+    background-image: url("../img/fest-1.jpg");
+    background-position: center 100%;
+    background-size: $phone-width auto;
+  }
 }
 
-.theatre .image{
-  background-image: url("../img/theatre-1.jpg");
-  background-position: center 100%;
-  background-size: $phone-width auto;
+.theatre {
+  .category {
+    background-color: #79BD8F;
+  }
+  .image {
+    background-image: url("../img/theatre-1.jpg");
+    background-position: center 100%;
+    background-size: $phone-width auto;
+  }
 }
