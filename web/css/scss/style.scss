@@ -22,4 +22,22 @@ body {
   font-family: 'metromedium_lt_tworegular', sans-serif;
   width: 100%;
   height: 100%;
+  background-color: #FCFAE1;
+}
+
+$wrapper-width: 960px;
+
+.wrapper {
+  position: relative;
+  width: $wrapper-width;
+  left: 50%;
+  margin-left: -$wrapper-width/2;
+}
+
+.button {
+  
+}
+
+.another {
+  
 }
