@@ -22,6 +22,9 @@ body {
   font-family: 'metromedium_lt_tworegular', sans-serif;
   width: 100%;
   height: 100%;
+<<<<<<< HEAD
+}
+=======
 }
 
 $phone-width: 640px/2;
@@ -64,13 +67,25 @@ $phone-height: 1136px/2;
   font-size: 24px;
   border-bottom: 1px solid #EFEFEF;
   color: #FF2A00;
+  .options{
+    position: absolute;
+    right: 0;
+    background: url("../img/options-icon.png") no-repeat center center;
+    -webkit-background-size: 24px 24px;
+    -moz-background-size: 24px 24px;
+    background-size: 24px 24px;
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    padding: 10px;
+  }
 }
 
 .tiles {
   position: relative;
   left: 0;
   top: 64px;
-  height: $phone-height - 64;
+  height: $phone-height - 112;
   width: 100%;
   transition: left 0.2s;
   overflow: scroll;
@@ -202,3 +217,99 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6000000', e
     background-size: $phone-width auto;
   }
 }
+
+.optionbar{
+  position: absolute;
+  z-index: 5;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 48px;
+  background: #FFFFFF;
+  box-shadow: -1px 0px 12px rgba(0,0,0,0.2);
+  .time, .groupsize, .budget, .transportation{
+    width: 24px;
+    height: 24px;
+    padding: 12px 6px 12px 12px;
+    float: left;
+    cursor: pointer;
+  }
+  .time{
+    background: url("../img/time-icon.png") no-repeat center;
+    -webkit-background-size: 24px 24px;
+    -moz-background-size: 24px 24px;
+    background-size: 24px 24px;
+  }
+  .groupsize{
+    background: url("../img/people-icon.png") no-repeat center;
+    -webkit-background-size: 24px 24px;
+    -moz-background-size: 24px 24px;
+    background-size: 24px 24px;
+  }
+  .budget{
+    background: url("../img/money-icon.png") no-repeat center;
+    -webkit-background-size: 24px 24px;
+    -moz-background-size: 24px 24px;
+    background-size: 24px 24px;
+  }
+  .transportation{
+    background: url("../img/person-icon.png") no-repeat center;
+    -webkit-background-size: 24px 24px;
+    -moz-background-size: 24px 24px;
+    background-size: 24px 24px;
+  }
+  p{
+    float: left;
+    line-height: 48px;
+    width: 48px;
+    color: #333333;
+    cursor: pointer;
+  }
+}
+.select{
+  position: absolute;
+  bottom: 48px;
+  left: 0;
+  z-index: 5;
+  width: $phone-width - 96;
+  margin: 32px 32px 0 32px;
+  padding: 16px;
+  background: #ffffff;
+  box-shadow: -1px 0px 12px rgba(0,0,0,0.2);
+  h2{
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #666;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #EFEFEF;
+  }
+  p{
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+    border-bottom: 1px solid #EFEFEF;
+    &:last-of-type{
+      border: none;
+    }
+  }
+  .timeselect, .groupsizeselect, .budgetselect, .transportationselect{
+    display: none;
+  }
+}
+.selecthide{
+  -webkit-transform: translateY(240px);
+  -moz-transform: translateY(240px);
+  -o-transform: translateY(240px);
+  -ms-transform: translateY(240px);
+  transform: translateY(240px);
+}
+
+
+
+
+
+
+
+
+>>>>>>> eaea8f59183f06ad73a5169f6ab54fdcfcc95728
