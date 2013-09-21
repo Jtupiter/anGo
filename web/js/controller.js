@@ -1,0 +1,2 @@
+function anGoCtrl($scope, $http){
+}

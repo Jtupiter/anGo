@@ -14,3 +14,9 @@ var db = mongojs.connect(mongoUrl);
 app.get('/', function(req, res){
     res.sendfile(__dirname + '/index.html');
 });
+
+app.get('/events/', function(req, res){
+	db.events.find({}, function(err, groups){
+        res.send(events);
+    });
+});
