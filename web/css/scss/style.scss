@@ -1,0 +1,148 @@
+// Reset
+
+@import "_reset.scss";
+
+// Typography
+
+@import "_typography.scss";
+
+// Styles
+
+body {
+  font-family: 'Open Sans', Open Sans, sans-serif;
+  font-weight: 300;
+  width: 100%;
+  height: 100%;
+}
+
+$phone-width: 640px/2;
+$phone-height: 1136px/2;
+
+.phone-inner {
+  width: $phone-width;
+  height: $phone-height;
+  left: 50%;
+  top: 50%;
+  margin-left: -($phone-width/2);
+  margin-top: -($phone-height/2);
+  position: absolute;
+  background-color: #EFEFEF;
+  border: 1px solid #ccc;
+  overflow-x: hidden;
+}
+
+.status-bar {
+  position: absolute;
+  top: 0;
+  height: 20px;
+  width: 100%;
+  background-color: #F5F5F5;
+  font-size: 12px;
+  text-align: center;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.nav-bar {
+  position: absolute;
+  top: 20px;
+  height: 44px;
+  width: 100%;
+  background-color: #F5F5F5;
+  line-height: 44px;
+  text-align: center;
+  font-size: 18px;
+  border-bottom: 1px solid #EFEFEF;
+}
+
+.tiles {
+  position: relative;
+  left: 0;
+  top: 64px;
+  height: $phone-height - 64;
+  width: 100%;
+  transition: left 0.2s;
+  overflow: scroll;
+  &.closed {
+    left: -100%;
+    transition: left 0.2s;
+  }
+  li {
+  	position: relative;
+    height: 160px;
+    width: 100%;
+    &:nth-child(1n) {
+      background-color: orange;
+    }
+    &:nth-child(2n) {
+      background-color: red;
+    }
+    h1 {
+      position: relative;
+      z-index: 2;
+      padding: 20px 12px;
+      font-size: 20px;
+      color: white;
+      font-weight: 400;
+      text-shadow: 0 0 12px rgba(0,0,0,0.9);
+    }
+    .gradient { 
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 160px;
+		width: 100%;
+		z-index: 1;
+	   	background: -moz-linear-gradient(top,  rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 49%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.9)), color-stop(49%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0) 49%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0) 49%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0) 49%,rgba(0,0,0,0) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0) 49%,rgba(0,0,0,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+    }
+  }
+}
+
+.item-info {
+  position: absolute;
+  top: 64px;
+  height: $phone-height - 64;
+  width: 100%;
+  overflow: scroll;
+  left: $phone-width;
+  transition: left 0.2s;
+  background-color: blue;
+  &.open {
+    left: 0;
+    transition: left 0.2s;
+  }
+  .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-color: yellow;
+  }
+}
+
+// Events
+
+.lunch {
+  background-image: url("../img/food-1.jpg");
+  background-position: center 100%;
+  background-size: $phone-width auto;
+}
+
+.festival {
+  background-image: url("../img/fest-1.jpg");
+  background-position: center 100%;
+  background-size: $phone-width auto;
+}
+
+.theatre {
+  background-image: url("../img/theatre-1.jpg");
+  background-position: center 100%;
+  background-size: $phone-width auto;
+}

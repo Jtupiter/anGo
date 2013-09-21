@@ -1,0 +1,179 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figcaption, figure, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  color: #000; }
+
+a:visited {
+  color: #000; }
+
+a:hover {
+  color: #000; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:hover, a:active {
+  outline: 0; }
+
+::-moz-selection {
+  background: #666;
+  color: #fff;
+  text-shadow: none; }
+
+::selection {
+  background: #666;
+  color: #fff;
+  text-shadow: none; }
+
+a {
+  text-decoration: none; }
+
+body {
+  font-family: 'Open Sans', Open Sans, sans-serif;
+  font-weight: 300;
+  width: 100%;
+  height: 100%; }
+
+.phone-inner {
+  width: 320px;
+  height: 568px;
+  left: 50%;
+  top: 50%;
+  margin-left: -160px;
+  margin-top: -284px;
+  position: absolute;
+  background-color: #EFEFEF;
+  border: 1px solid #ccc;
+  overflow-x: hidden; }
+
+.status-bar {
+  position: absolute;
+  top: 0;
+  height: 20px;
+  width: 100%;
+  background-color: #F5F5F5;
+  font-size: 12px;
+  text-align: center;
+  line-height: 20px;
+  font-weight: 400; }
+
+.nav-bar {
+  position: absolute;
+  top: 20px;
+  height: 44px;
+  width: 100%;
+  background-color: #F5F5F5;
+  line-height: 44px;
+  text-align: center;
+  font-size: 18px;
+  border-bottom: 1px solid #EFEFEF; }
+
+.tiles {
+  position: relative;
+  left: 0;
+  top: 64px;
+  height: 504px;
+  width: 100%;
+  transition: left 0.2s;
+  overflow: scroll; }
+  .tiles.closed {
+    left: -100%;
+    transition: left 0.2s; }
+  .tiles li {
+    position: relative;
+    height: 160px;
+    width: 100%; }
+    .tiles li:nth-child(1n) {
+      background-color: orange; }
+    .tiles li:nth-child(2n) {
+      background-color: red; }
+    .tiles li h1 {
+      position: relative;
+      z-index: 2;
+      padding: 20px 12px;
+      font-size: 20px;
+      color: white;
+      font-weight: 400;
+      text-shadow: 0 0 12px rgba(0, 0, 0, 0.9); }
+    .tiles li .gradient {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 160px;
+      width: 100%;
+      z-index: 1;
+      background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 49%, rgba(0, 0, 0, 0) 100%);
+      /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.9)), color-stop(49%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+      /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 49%, rgba(0, 0, 0, 0) 100%);
+      /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 49%, rgba(0, 0, 0, 0) 100%);
+      /* Opera 11.10+ */
+      background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 49%, rgba(0, 0, 0, 0) 100%);
+      /* IE10+ */
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 49%, rgba(0, 0, 0, 0) 100%);
+      /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e6000000', endColorstr='#00000000',GradientType=0 );
+      /* IE6-9 */ }
+
+.item-info {
+  position: absolute;
+  top: 64px;
+  height: 504px;
+  width: 100%;
+  overflow: scroll;
+  left: 320px;
+  transition: left 0.2s;
+  background-color: blue; }
+  .item-info.open {
+    left: 0;
+    transition: left 0.2s; }
+  .item-info .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-color: yellow; }
+
+.lunch {
+  background-image: url("../img/food-1.jpg");
+  background-position: center 100%;
+  background-size: 320px auto; }
+
+.festival {
+  background-image: url("../img/fest-1.jpg");
+  background-position: center 100%;
+  background-size: 320px auto; }
+
+.theatre {
+  background-image: url("../img/theatre-1.jpg");
+  background-position: center 100%;
+  background-size: 320px auto; }
