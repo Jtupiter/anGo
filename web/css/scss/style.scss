@@ -64,6 +64,17 @@ $phone-height: 1136px/2;
   font-size: 24px;
   border-bottom: 1px solid #EFEFEF;
   color: #FF2A00;
+  .options{
+    background: url("../img/options-icon.png") no-repeat;
+    -webkit-background-size: 24px 24px;
+    -moz-background-size: 24px 24px;
+    background-size: 24px 24px;
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    margin: 10px;
+    float: right;
+  }
 }
 
 .tiles {
@@ -247,7 +258,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6000000', e
     float: left;
     line-height: 48px;
     width: 48px;
-
+    cursor: pointer;
   }
 }
 
