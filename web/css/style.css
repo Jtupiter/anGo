@@ -73,6 +73,40 @@ body {
   left: 50%;
   margin-left: -480px; }
 
+.button {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 500px;
+  width: 500px;
+  background: #DE5605;
+  border: none;
+  font-size: 32px;
+  font-size: 2rem;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 4px #993B03;
+  box-shadow: 0 4px #993B03;
+  cursor: pointer; }
+  .button:hover {
+    background-color: #ED762F;
+    -webkit-transition: background-color 0.4s;
+    -moz-transition: background-color 0.4s;
+    -o-transition: background-color 0.4s;
+    -ms-transition: background-color 0.4s;
+    transition: background-color 0.4s; }
+  .button:active {
+    -webkit-box-shadow: inset 0 2px 3px -1px #993B03;
+    box-shadow: inset 0 2px 3px -1px #993B03;
+    background-color: #DE5605;
+    -webkit-transform: translateY(4px);
+    -moz-transform: translateY(4px);
+    -o-transform: translateY(4px);
+    -ms-transform: translateY(4px);
+    transform: trasnslateY(4px); }
+
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 640px) {
   .wrapper {
