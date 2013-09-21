@@ -80,16 +80,26 @@ body {
   left: 0;
   bottom: 0;
   right: 0;
-  height: 500px;
-  width: 500px;
+  height: 30vw;
+  width: 30%;
   background: #DE5605;
   border: none;
   font-size: 32px;
   font-size: 2rem;
   border-radius: 50%;
-  -webkit-box-shadow: 0 4px #993B03;
-  box-shadow: 0 4px #993B03;
-  cursor: pointer; }
+  -webkit-box-shadow: 0 16px #993B03;
+  box-shadow: 0 16px #993B03;
+  cursor: pointer;
+  -webkit-transform: translateX(0px) rotate(0deg) translateY(0px);
+  -moz-transform: translateX(0px) rotate(0deg) translateY(0px);
+  -o-transform: translateX(0px) rotate(0deg) translateY(0px);
+  -ms-transform: translateX(0px) rotate(0deg) translateY(0px);
+  transform: trasnslateX(0px) rotate(0deg) translateY(0px);
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -o-transition: 0.6s;
+  -ms-transition: 0.6s;
+  transition: 0.6s; }
   .button:hover {
     background-color: #ED762F;
     -webkit-transition: background-color 0.4s;
@@ -98,14 +108,35 @@ body {
     -ms-transition: background-color 0.4s;
     transition: background-color 0.4s; }
   .button:active {
-    -webkit-box-shadow: inset 0 2px 3px -1px #993B03;
-    box-shadow: inset 0 2px 3px -1px #993B03;
-    background-color: #DE5605;
-    -webkit-transform: translateY(4px);
-    -moz-transform: translateY(4px);
-    -o-transform: translateY(4px);
-    -ms-transform: translateY(4px);
-    transform: trasnslateY(4px); }
+    -webkit-box-shadow: 0 0 #993B03;
+    box-shadow: 0 0 #993B03;
+    -webkit-transform: translateY(16px);
+    -moz-transform: translateY(16px);
+    -o-transform: translateY(16px);
+    -ms-transform: translateY(16px);
+    transform: trasnslateY(16px); }
+
+.square {
+  position: absolute;
+  top: 250px;
+  left: 250px;
+  width: 75px;
+  height: 75px;
+  background: blue; }
+
+.button.rollaway {
+  -webkit-transform: translateX(-900px) rotate(-360deg) translateY(0px);
+  -moz-transform: translateX(-900px) rotate(-360deg) translateY(0px);
+  -o-transform: translateX(-900px) rotate(-360deg) translateY(0px);
+  -ms-transform: translateX(-900px) rotate(-360deg) translateY(0px);
+  transform: trasnslateX(-900px) rotate(-360deg) translateY(0px);
+  -webkit-box-shadow: 0 0 #993B03;
+  box-shadow: 0 0 #993B03;
+  -webkit-transition: -webkit-transform 0.6s, -webkit-box-shadow 0.2s;
+  -moz-transition: -moz-transform 0.6s, box-shadow 0.2s;
+  -o-transition: -o-transform 0.6s, box-shadow 0.2s;
+  -ms-transition: -ms-transform 0.6s, box-shadow 0.2s;
+  transition: transform 0.6s, box-shadow 0.2s; }
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 640px) {
