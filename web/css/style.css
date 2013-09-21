@@ -72,3 +72,17 @@ body {
   width: 960px;
   left: 50%;
   margin-left: -480px; }
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 640px) {
+  .wrapper {
+    width: 100%;
+    left: 0;
+    margin-left: 0; } }
+/* iPads (portrait) ----------- */
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  .wrapper {
+    position: relative;
+    width: 720px;
+    left: 50%;
+    margin-left: -360px; } }
