@@ -113,25 +113,26 @@ body {
     transition: left 0.2s; }
   .tiles li {
     position: relative;
-    height: 180px;
-    width: 92%;
-    margin: 12px 4%;
-    box-shadow: 1px 0px 12px rgba(0, 0, 0, 0.2); }
-    .tiles li:nth-child(1n) {
-      background-color: orange; }
-    .tiles li:nth-child(2n) {
-      background-color: red; }
+    width: 310px;
+    box-shadow: 1px 0px 12px rgba(0, 0, 0, 0.2);
+    margin: 12px 5px; }
     .tiles li h1 {
+      float: left;
       position: relative;
       z-index: 2;
-      padding: 20px 12px;
-      font-size: 20px;
-      color: white;
-      font-weight: 400;
-      text-shadow: 0 0 12px rgba(0, 0, 0, 0.9); }
+      padding: 0 12px;
+      padding-top: 14px;
+      font-size: 16px;
+      color: #111;
+      font-weight: 400; }
+    .tiles li h2 {
+      float: left;
+      color: #555;
+      padding: 6px 12px;
+      font-size: 14px; }
     .tiles li .image {
       width: 100%;
-      height: 120px; }
+      height: 96px; }
     .tiles li .gradient {
       position: absolute;
       top: 0;
@@ -153,6 +154,19 @@ body {
       /* W3C */
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e6000000', endColorstr='#00000000',GradientType=0 );
       /* IE6-9 */ }
+    .tiles li .details {
+      height: 64px;
+      width: 100%; }
+    .tiles li .time {
+      padding: 12px 6px;
+      width: 60px;
+      float: left;
+      text-align: center;
+      font-weight: 400;
+      font-size: 20px;
+      border-right: 1px solid #EFEFEF; }
+      .tiles li .time span {
+        font-size: 16px; }
 
 .item-info {
   position: absolute;
@@ -174,17 +188,22 @@ body {
     height: 60px;
     background-color: yellow; }
 
-.lunch {
+.lunch .category {
+  background-color: #7D8A2E;
+  width: 6px;
+  height: 100%;
+  float: left; }
+.lunch .image {
   background-image: url("../img/food-1.jpg");
   background-position: center 100%;
   background-size: 320px auto; }
 
-.festival {
+.festival .image {
   background-image: url("../img/fest-1.jpg");
   background-position: center 100%;
   background-size: 320px auto; }
 
-.theatre {
+.theatre .image {
   background-image: url("../img/theatre-1.jpg");
   background-position: center 100%;
   background-size: 320px auto; }

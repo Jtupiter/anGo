@@ -78,28 +78,28 @@ $phone-height: 1136px/2;
   }
   li {
   	position: relative;
-    height: 180px;
-    width: 92%;
-    margin: 12px 4%;
+    width: $phone-width - 10px;
     box-shadow: 1px 0px 12px rgba(0,0,0,0.2);
-    &:nth-child(1n) {
-      background-color: orange;
-    }
-    &:nth-child(2n) {
-      background-color: red;
-    }
+    margin: 12px 5px;
     h1 {
+      float: left;
       position: relative;
       z-index: 2;
-      padding: 20px 12px;
-      font-size: 20px;
-      color: white;
+      padding: 0 12px;
+      padding-top: 14px;
+      font-size: 16px;
+      color: #111;
       font-weight: 400;
-      text-shadow: 0 0 12px rgba(0,0,0,0.9);
+    }
+    h2 {
+      float: left;
+      color: #555;
+      padding: 6px 12px;
+      font-size: 14px;
     }
     .image {
         width: 100%;
-        height: 120px;
+        height: 96px;
     }
     .gradient { 
 		position: absolute;
@@ -115,6 +115,23 @@ background: -o-linear-gradient(top,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0) 49%,rgba(0
 background: -ms-linear-gradient(top,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0) 49%,rgba(0,0,0,0) 100%); /* IE10+ */
 background: linear-gradient(to bottom,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0) 49%,rgba(0,0,0,0) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+    }
+    .details {
+      height: 64px;
+      width: 100%;
+    }
+
+    .time {
+      padding: 12px 6px;
+      width: 60px;
+      float: left;
+      text-align: center;
+      font-weight: 400;
+      font-size: 20px;
+      border-right: 1px solid #EFEFEF;
+      span {
+        font-size: 16px;
+      }
     }
   }
 }
@@ -145,18 +162,26 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6000000', e
 // Events
 
 .lunch {
-  background-image: url("../img/food-1.jpg");
-  background-position: center 100%;
-  background-size: $phone-width auto;
+  .category {
+    background-color: #7D8A2E;
+    width: 6px;
+    height: 100%;
+    float: left;
+  }
+  .image {
+    background-image: url("../img/food-1.jpg");
+    background-position: center 100%;
+    background-size: $phone-width auto;
+  }
 }
 
-.festival {
+.festival .image {
   background-image: url("../img/fest-1.jpg");
   background-position: center 100%;
   background-size: $phone-width auto;
 }
 
-.theatre {
+.theatre .image{
   background-image: url("../img/theatre-1.jpg");
   background-position: center 100%;
   background-size: $phone-width auto;
