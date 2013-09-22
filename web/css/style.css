@@ -306,13 +306,6 @@ nav {
   -ms-transform-origin: right;
   transform-origin: right; }
 
-.content.slidein {
-  -webkit-transform: translateX(0px) translateY(568px);
-  -moz-transform: translateX(0px) translateY(568px);
-  -o-transform: translateX(0px) translateY(568px);
-  -ms-transform: translateX(0px) translateY(568px);
-  transform: translateX(0px) translateY(568px); }
-
 .button {
   position: absolute;
   left: 50%;

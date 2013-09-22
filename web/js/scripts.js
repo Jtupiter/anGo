@@ -8,6 +8,7 @@ $(document).ready(function(){
 
 //big button
 $(document).ready(function(){
+  $(".content").not(":eq(0)").hide(); //hide initial 
   $(".button").click(function(){
     $(".button").addClass("rollaway");
     $(".navicon").addClass("back");
@@ -17,23 +18,39 @@ $(document).ready(function(){
 
 //show drawer
 $(".navicon").click(function(){
-  if ($(".navicon").hasClass("back")) { //go back to button/sorting
-    $(".button").removeClass("rollaway");
-    $(".navicon").removeClass("back");
-    $(".content").addClass("hidden");
+  if ($(".navicon").hasClass("back")) {
+    refresh();
   } else { //else show drawer
     $('.body-frame').toggleClass('expanded');
   }
 });
 
 //load new option
-$(".refresh").eq(0).click(function(){
-  $(".content").eq(0).addClass("flipaway");
-  setTimeout(function(){
-    $(".content").eq(0).hide();
-    $(".content").eq(1).removeClass("slidein");
-  }, 600);
+$(".refresh").click(function(){
+  refresh();
 });
+
+//global counter
+var counter = 0;
+
+//refresh function
+function refresh() {
+  var index = counter;
+  console.log(index);
+  $(".button").removeClass("rollaway");
+  $(".navicon").removeClass("back");
+  $(".content").addClass("hidden");
+  setTimeout(function(){
+    $(".content").eq(index).hide();
+    if (index !== 2) {
+      $(".content").eq(index+1).show();
+      window.counter++
+    } else if (index === 2) {
+      $(".content").eq(0).show();
+      window.counter = 0
+    }
+  }, 600);
+}
 
 //random bumber between range
 function getRandomInt(min, max){
