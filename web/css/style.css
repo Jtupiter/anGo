@@ -108,17 +108,53 @@ nav {
       background-position: right center; }
 
 .phonewrapper {
-  margin: auto;
   position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  margin: -284px -160px 0;
+  top: 50%;
+  left: 50%;
   width: 320px;
   height: 568px;
   background: #fcf8ef;
   overflow: hidden;
   border: 1px solid #efefef; }
+
+.inner {
+  position: relative;
+  z-index: 2;
+  background: #fcf8ef;
+  height: 568px;
+  left: 0px;
+  transition: left 0.2s ease;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.8); }
+  .inner.expanded {
+    transition: left 0.2s ease;
+    left: 220px; }
+
+.deck {
+  font-family: sans-serif;
+  width: 220px;
+  height: 100%;
+  background-color: #33393d;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 1; }
+  .deck ul > li {
+    padding: 16px 26px;
+    font-size: 14px;
+    display: block;
+    color: #ADADAD; }
+    .deck ul > li:hover {
+      color: white; }
+    .deck ul > li:first-child {
+      margin-top: 6px; }
+    .deck ul > li.divider {
+      border-bottom: 1px solid #333;
+      padding-bottom: 22px;
+      margin-bottom: 16px; }
+    .deck ul > li a.current {
+      color: white; }
 
 .content {
   width: 320px;
@@ -202,7 +238,7 @@ nav {
   .content .discount {
     position: absolute;
     z-index: 4;
-    top: 56px;
+    top: 58px;
     right: 16px;
     height: 48px;
     width: 48px;
@@ -254,12 +290,11 @@ nav {
   transform: translateX(0px) translateY(568px); }
 
 .button {
-  margin: auto;
   position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  left: 50%;
+  top: 50%;
+  margin-left: -120px;
+  margin-top: -120px;
   height: 240px;
   width: 240px;
   background-color: #ff4800;

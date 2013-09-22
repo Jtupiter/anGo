@@ -23,7 +23,7 @@ $(".navicon").click(function(){
     $(".navicon").removeClass("back");
     $(".content").addClass("hidden");
   } else { //else show drawer
-    //code to show drawer
+    $('.body-frame').toggleClass('expanded');
   }
 });
 
