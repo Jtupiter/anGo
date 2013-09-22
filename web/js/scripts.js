@@ -47,10 +47,11 @@ function refresh() {
 }
 
 function randomizebutton() {
-  var backgrounds = ["go1.png", "go2.png", "go3.png"];
-  var count = backgrounds.length - 1;
-  var random = backgrounds[getRandomInt(0, count)];
-  $(".button").css('background-image', 'url("img/' + random + '")');
+  //var backgrounds = ["go1.png", "go2.png", "go3.png"];
+  //var count = backgrounds.length - 1;
+  //var random = backgrounds[getRandomInt(0, count)];
+  //$(".button").css('background-image', 'url("img/' + random + '")');
+  $(".button").css('background-image', 'url("img/go2.png")');
 }
 //random bumber between range
 function getRandomInt(min, max){
