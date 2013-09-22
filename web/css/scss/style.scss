@@ -209,7 +209,7 @@ nav{
       font-size: 16px;
       color: #333333;
       line-height: 32px;
-      vertical-align: text-top;
+      vertical-align: text-bottom;
     }
   }
   p{
@@ -283,8 +283,9 @@ nav{
       color: $maincolor;
     }
     &:active{
-      background: #333333;
+      background: $maincolor;
       color: $background;
+      border: 1px solid $maincolor;
     }
   }
 }

@@ -228,7 +228,7 @@ nav {
       font-size: 16px;
       color: #333333;
       line-height: 32px;
-      vertical-align: text-top; }
+      vertical-align: text-bottom; }
   .content p {
     padding: 0 20px;
     line-height: 24px;
@@ -291,8 +291,9 @@ nav {
     .content .refresh:hover {
       color: #ff4800; }
     .content .refresh:active {
-      background: #333333;
-      color: #fcf8ef; }
+      background: #ff4800;
+      color: #fcf8ef;
+      border: 1px solid #ff4800; }
 
 .content.flipaway {
   -webkit-transform: rotateY(90deg) translateX(0px);
