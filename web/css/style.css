@@ -270,10 +270,10 @@ nav {
   .content .discount {
     position: absolute;
     z-index: 4;
-    top: 54px;
+    top: 40px;
     right: 16px;
-    height: 52px;
-    width: 52px;
+    height: 64px;
+    width: 64px;
     border: 4px solid #fcf8ef;
     box-shadow: 0 0 0 4px #39b54a;
     background: #39b54a;
