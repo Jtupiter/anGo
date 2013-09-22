@@ -180,8 +180,9 @@ nav {
   width: 320px;
   max-height: 100%;
   position: relative;
-  opacity: 1;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background: #fcf8ef;
   -webkit-transform: translateX(0px) translateY(0px);
   -moz-transform: translateX(0px) translateY(0px);
   -o-transform: translateX(0px) translateY(0px);
@@ -208,8 +209,7 @@ nav {
     -moz-transform: translateX(480px);
     -o-transform: translateX(480px);
     -ms-transform: translateX(480px);
-    transform: trasnslateX(480px);
-    opacity: 0; }
+    transform: trasnslateX(480px); }
   .content img {
     width: 100%; }
   .content h2 {

@@ -10,6 +10,7 @@ $(document).ready(function(){
     $(".button").addClass("rollaway");
     $(".navicon").addClass("back");
     $(".content").removeClass("hidden");
+    $(".pulse").hide();
   });
 });
 
@@ -33,11 +34,12 @@ var counter = 0;
 //refresh function
 function refresh() {
   var index = counter;
-  randomizebutton()
+  randomizebutton();
   $(".button").removeClass("rollaway");
   $(".navicon").removeClass("back");
   $(".content").addClass("hidden");
   setTimeout(function(){
+    $(".pulse").fadeIn(400);
     $(".content").eq(index).hide();
     if (index !== 2) {
       $(".content").eq(index+1).show();

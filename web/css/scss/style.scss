@@ -158,8 +158,9 @@ nav{
   width: 320px;
   max-height: 100%;
   position: relative;
-  opacity: 1;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background: $background;
   -webkit-transform: translateX(0px) translateY(0px);
   -moz-transform: translateX(0px) translateY(0px);
   -o-transform: translateX(0px) translateY(0px);
@@ -187,7 +188,6 @@ nav{
     -o-transform: translateX(480px);
     -ms-transform: translateX(480px);
     transform: trasnslateX(480px);
-    opacity: 0;
   }
   img{
     width: 100%;
