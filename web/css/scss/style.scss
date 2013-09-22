@@ -29,10 +29,33 @@ $p-width: 320px;
 $p-height: 568px;
 
 body {
+  position: absolute;
   font-family: 'metromedium_lt_tworegular', sans-serif;
   width: 100%;
   height: 100%;
 }
+
+.stage-bg {
+  height: 40%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fcf8ef;
+  z-index: 1;
+}
+
+// Phone Background
+.bg-wrap {
+  position: absolute;
+  background-image: url("../img/minimusv1000.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+}
+
 nav{
   width: 100%;
   height: 48px;
@@ -80,7 +103,7 @@ nav{
   height: $p-height;
   background: $background;
   overflow: hidden;
-  border: 1px solid #efefef;
+  z-index: 999;
 }
 
 .inner {
@@ -124,8 +147,9 @@ nav{
       padding-bottom: $row-padding + 6;
       margin-bottom: $row-padding;
     }
-    a.current {
+    &.current {
       color: white;
+      font-weight: bold;
     }
   }
 }
@@ -204,29 +228,33 @@ nav{
     text-align: center;
   }
   .share{
-    height: 44px;
-    width: 44px;
-    border-radius: 50%;
+    height: 16px;
+    width: 180px;
+    text-align: center;
+    padding: 12px 0;
+    border-radius: 16px;
     border: 1px solid #333333;
     margin: 0 auto;
     background: url("../img/facebook.png") no-repeat left center;
     -webkit-background-size: 88px 44px;
-    -moz-background-size: 88px 44px;
-    background-size: 88px 44px;
+    -moz-background-size: 42px 84px;
+    background-size: 42px 84px;
     cursor: pointer;
+    background-position: left top;
     &:hover, &:active{
       background-color: #3B5998;
       border: 1px solid #3B5998;
-      background-position: right center;
+      background-position: left bottom;
+      color: white;
     }
   }
   .discount{
     position: absolute;
     z-index: 4;
-    top: 58px;
+    top: 54px;
     right: 16px;
-    height: 48px;
-    width: 48px;
+    height: 52px;
+    width: 52px;
     border: 4px solid $background;
     box-shadow: 0 0 0 4px $secondarycolor;  
     background: $secondarycolor;
@@ -342,4 +370,28 @@ nav{
   -o-transition: -o-transform 0.4s, box-shadow 0.2s;
   -ms-transition: -ms-transform 0.4s, box-shadow 0.2s;
   transition: transform 0.4s, box-shadow 0.2s;
+}
+
+/*****
+*
+*   MEDIA QUERIES
+*
+******/
+
+@media screen and (max-width: 320px) {
+  .bg-wrap {
+    background: white;
+  }
+
+  .phonewrapper {
+    height: 100%;
+    margin-top: 0;
+    top: 0;
+  }
+
+  .body-frame {
+    height: 100%;
+    margin-top: 0;
+    top: 0;
+  }
 }

@@ -69,9 +69,28 @@ a {
   font-style: normal; }
 
 body {
+  position: absolute;
   font-family: 'metromedium_lt_tworegular', sans-serif;
   width: 100%;
   height: 100%; }
+
+.stage-bg {
+  height: 40%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fcf8ef;
+  z-index: 1; }
+
+.bg-wrap {
+  position: absolute;
+  background-image: url("../img/minimusv1000.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  z-index: 99; }
 
 nav {
   width: 100%;
@@ -116,7 +135,7 @@ nav {
   height: 568px;
   background: #fcf8ef;
   overflow: hidden;
-  border: 1px solid #efefef; }
+  z-index: 999; }
 
 .inner {
   position: relative;
@@ -153,8 +172,9 @@ nav {
       border-bottom: 1px solid #333;
       padding-bottom: 22px;
       margin-bottom: 16px; }
-    .deck ul > li a.current {
-      color: white; }
+    .deck ul > li.current {
+      color: white;
+      font-weight: bold; }
 
 .content {
   width: 320px;
@@ -221,27 +241,31 @@ nav {
   .content .center {
     text-align: center; }
   .content .share {
-    height: 44px;
-    width: 44px;
-    border-radius: 50%;
+    height: 16px;
+    width: 180px;
+    text-align: center;
+    padding: 12px 0;
+    border-radius: 16px;
     border: 1px solid #333333;
     margin: 0 auto;
     background: url("../img/facebook.png") no-repeat left center;
     -webkit-background-size: 88px 44px;
-    -moz-background-size: 88px 44px;
-    background-size: 88px 44px;
-    cursor: pointer; }
+    -moz-background-size: 42px 84px;
+    background-size: 42px 84px;
+    cursor: pointer;
+    background-position: left top; }
     .content .share:hover, .content .share:active {
       background-color: #3B5998;
       border: 1px solid #3B5998;
-      background-position: right center; }
+      background-position: left bottom;
+      color: white; }
   .content .discount {
     position: absolute;
     z-index: 4;
-    top: 58px;
+    top: 54px;
     right: 16px;
-    height: 48px;
-    width: 48px;
+    height: 52px;
+    width: 52px;
     border: 4px solid #fcf8ef;
     box-shadow: 0 0 0 4px #39b54a;
     background: #39b54a;
@@ -348,3 +372,22 @@ nav {
   -o-transition: -o-transform 0.4s, box-shadow 0.2s;
   -ms-transition: -ms-transform 0.4s, box-shadow 0.2s;
   transition: transform 0.4s, box-shadow 0.2s; }
+
+/*****
+*
+*   MEDIA QUERIES
+*
+******/
+@media screen and (max-width: 320px) {
+  .bg-wrap {
+    background: white; }
+
+  .phonewrapper {
+    height: 100%;
+    margin-top: 0;
+    top: 0; }
+
+  .body-frame {
+    height: 100%;
+    margin-top: 0;
+    top: 0; } }
