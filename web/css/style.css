@@ -204,6 +204,8 @@ nav {
   transform-style: preserve3d;
   -webkit-perspective: 600px;
   -moz-perspective: 600px; }
+  .content .maintext {
+    color: #807866; }
   .content.hidden {
     -webkit-transform: translateX(480px);
     -moz-transform: translateX(480px);
@@ -238,6 +240,12 @@ nav {
       cursor: pointer; }
       .content p span.highlight:hover {
         border-bottom: 1px solid #ff4800; }
+  .content hr {
+    height: 0;
+    border-bottom: 1px solid #ff4800;
+    width: 13%;
+    margin: 16px auto;
+    opacity: 0.33; }
   .content .center {
     text-align: center; }
   .content .share {
