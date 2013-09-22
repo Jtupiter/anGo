@@ -324,6 +324,7 @@ nav {
   height: 240px;
   width: 240px;
   background-color: #ff4800;
+  background-image: url("../img/go1.png");
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: 160px 160px;

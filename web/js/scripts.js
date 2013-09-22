@@ -1,8 +1,3 @@
-//randomly generate button image
-$(document).ready(function(){
-  randomizebutton()
-});
-
 //big button
 $(document).ready(function(){
   $(".content").not(":eq(0)").hide(); //hide initial 
