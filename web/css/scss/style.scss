@@ -366,6 +366,171 @@ nav{
   transition: transform 0.4s, box-shadow 0.2s;
 }
 
+.pulse {
+  position: absolute;
+  $width: 300px;
+  height: $width;
+  width: $width;
+  top: 50%;
+  left: 50%;
+  margin-left: -($width/2) - 20;
+  margin-top: -($width/2) - 20;
+  border-radius: 50%;
+  border: 20px solid #faf3e5;
+  -webkit-animation: pulse 4s linear infinite;
+  animation: pulse 4s linear infinite;
+}
+
+@keyframes pulse {
+  0% {
+    $width: 300px;
+    height: $width;
+    width: $width;
+    margin-left: -($width/2) - 20;
+    margin-top: -($width/2) - 20;
+    opacity: 1;
+  }
+  24.999% {
+    $width: 300px;
+    height: $width;
+    width: $width;
+    margin-left: -($width/2) - 20;
+    margin-top: -($width/2) - 20;
+    opacity: 1;
+  }
+  25% {
+    $width: 280px;
+    height: $width;
+    width: $width;
+    margin-left: -($width/2) - 20;
+    margin-top: -($width/2) - 20;
+    opacity: 1;
+  }
+  49.999% {
+    $width: 280px;
+    height: $width;
+    width: $width;
+    margin-left: -($width/2) - 20;
+    margin-top: -($width/2) - 20;
+    opacity: 1;
+  }
+  50% {
+    $width: 260px;
+    height: $width;
+    width: $width;
+    margin-left: -($width/2) - 20;
+    margin-top: -($width/2) - 20;
+    opacity: 1;
+  }
+  74.999% {
+    $width: 260px;
+    height: $width;
+    width: $width;
+    margin-left: -($width/2) - 20;
+    margin-top: -($width/2) - 20;
+    opacity: 1;
+  }
+  75% {
+    $width: 240px;
+    height: $width;
+    width: $width;
+    margin-left: -($width/2) - 20;
+    margin-top: -($width/2) - 20;
+    opacity: 1;
+  }
+  99.999% {
+    $width: 240px;
+    height: $width;
+    width: $width;
+    margin-left: -($width/2) - 20;
+    margin-top: -($width/2) - 20;
+    opacity: 1;
+  }
+  100% {
+    $width: 300px;
+    height: $width;
+    width: $width;
+    margin-left: -($width/2) - 20;
+    margin-top: -($width/2) - 20;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    $width: 300px;
+    height: $width;
+    width: $width;
+    margin-left: -($width/2) - 20;
+    margin-top: -($width/2) - 20;
+    opacity: 1;
+  }
+  24.999% {
+    $width: 300px;
+    height: $width;
+    width: $width;
+    margin-left: -($width/2) - 20;
+    margin-top: -($width/2) - 20;
+    opacity: 1;
+  }
+  25% {
+    $width: 280px;
+    height: $width;
+    width: $width;
+    margin-left: -($width/2) - 20;
+    margin-top: -($width/2) - 20;
+    opacity: 1;
+  }
+  49.999% {
+    $width: 280px;
+    height: $width;
+    width: $width;
+    margin-left: -($width/2) - 20;
+    margin-top: -($width/2) - 20;
+    opacity: 1;
+  }
+  50% {
+    $width: 260px;
+    height: $width;
+    width: $width;
+    margin-left: -($width/2) - 20;
+    margin-top: -($width/2) - 20;
+    opacity: 1;
+  }
+  74.999% {
+    $width: 260px;
+    height: $width;
+    width: $width;
+    margin-left: -($width/2) - 20;
+    margin-top: -($width/2) - 20;
+    opacity: 1;
+  }
+  75% {
+    $width: 240px;
+    height: $width;
+    width: $width;
+    margin-left: -($width/2) - 20;
+    margin-top: -($width/2) - 20;
+    opacity: 1;
+  }
+  99.999% {
+    $width: 240px;
+    height: $width;
+    width: $width;
+    margin-left: -($width/2) - 20;
+    margin-top: -($width/2) - 20;
+    opacity: 1;
+  }
+  100% {
+    $width: 300px;
+    height: $width;
+    width: $width;
+    margin-left: -($width/2) - 20;
+    margin-top: -($width/2) - 20;
+    opacity: 1;
+  }
+}
+
 /*****
 *
 *   MEDIA QUERIES

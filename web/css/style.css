@@ -367,6 +367,147 @@ nav {
   -ms-transition: -ms-transform 0.4s, box-shadow 0.2s;
   transition: transform 0.4s, box-shadow 0.2s; }
 
+.pulse {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  top: 50%;
+  left: 50%;
+  margin-left: -170px;
+  margin-top: -170px;
+  border-radius: 50%;
+  border: 20px solid #faf3e5;
+  -webkit-animation: pulse 4s linear infinite;
+  animation: pulse 4s linear infinite; }
+
+@keyframes pulse {
+  0% {
+    height: 300px;
+    width: 300px;
+    margin-left: -170px;
+    margin-top: -170px;
+    opacity: 1; }
+
+  24.999% {
+    height: 300px;
+    width: 300px;
+    margin-left: -170px;
+    margin-top: -170px;
+    opacity: 1; }
+
+  25% {
+    height: 280px;
+    width: 280px;
+    margin-left: -160px;
+    margin-top: -160px;
+    opacity: 1; }
+
+  49.999% {
+    height: 280px;
+    width: 280px;
+    margin-left: -160px;
+    margin-top: -160px;
+    opacity: 1; }
+
+  50% {
+    height: 260px;
+    width: 260px;
+    margin-left: -150px;
+    margin-top: -150px;
+    opacity: 1; }
+
+  74.999% {
+    height: 260px;
+    width: 260px;
+    margin-left: -150px;
+    margin-top: -150px;
+    opacity: 1; }
+
+  75% {
+    height: 240px;
+    width: 240px;
+    margin-left: -140px;
+    margin-top: -140px;
+    opacity: 1; }
+
+  99.999% {
+    height: 240px;
+    width: 240px;
+    margin-left: -140px;
+    margin-top: -140px;
+    opacity: 1; }
+
+  100% {
+    height: 300px;
+    width: 300px;
+    margin-left: -170px;
+    margin-top: -170px;
+    opacity: 1; } }
+
+@-webkit-keyframes pulse {
+  0% {
+    height: 300px;
+    width: 300px;
+    margin-left: -170px;
+    margin-top: -170px;
+    opacity: 1; }
+
+  24.999% {
+    height: 300px;
+    width: 300px;
+    margin-left: -170px;
+    margin-top: -170px;
+    opacity: 1; }
+
+  25% {
+    height: 280px;
+    width: 280px;
+    margin-left: -160px;
+    margin-top: -160px;
+    opacity: 1; }
+
+  49.999% {
+    height: 280px;
+    width: 280px;
+    margin-left: -160px;
+    margin-top: -160px;
+    opacity: 1; }
+
+  50% {
+    height: 260px;
+    width: 260px;
+    margin-left: -150px;
+    margin-top: -150px;
+    opacity: 1; }
+
+  74.999% {
+    height: 260px;
+    width: 260px;
+    margin-left: -150px;
+    margin-top: -150px;
+    opacity: 1; }
+
+  75% {
+    height: 240px;
+    width: 240px;
+    margin-left: -140px;
+    margin-top: -140px;
+    opacity: 1; }
+
+  99.999% {
+    height: 240px;
+    width: 240px;
+    margin-left: -140px;
+    margin-top: -140px;
+    opacity: 1; }
+
+  100% {
+    height: 300px;
+    width: 300px;
+    margin-left: -170px;
+    margin-top: -170px;
+    opacity: 1; } }
+
 /*****
 *
 *   MEDIA QUERIES
