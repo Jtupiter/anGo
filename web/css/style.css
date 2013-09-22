@@ -385,8 +385,7 @@ nav {
   margin-top: -170px;
   border-radius: 50%;
   border: 20px solid #faf3e5;
-  -webkit-animation: pulse 4s linear infinite;
-  animation: pulse 4s linear infinite; }
+  display: none; }
 
 @keyframes pulse {
   0% {
